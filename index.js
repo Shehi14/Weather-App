@@ -73,8 +73,8 @@ const getWeather = async (cityData) => {
     weather.innerHTML = `<div class="weather-card">
         <h2>Weather in ${cityName}, ${country}</h2>
         <h1>${weatherData.current.temperature_2m}°C</h1>
-        <p>Humidity: ${weatherData.current.relative_humidity_2m}%</p>
-        <p>Wind Speed: ${weatherData.current.wind_speed_10m} km/h</p>
+        <p>💧 Humidity: ${weatherData.current.relative_humidity_2m}%</p>
+        <p>🌬️ Wind Speed: ${weatherData.current.wind_speed_10m} km/h</p>
     </div>`;
 
 };
