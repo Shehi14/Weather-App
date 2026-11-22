@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#searchBtn{
+    background:#0d9488;
+    color:azure;
+    padding:13px 17px;
+    border:none;
+    font-size:14px;
+    font-weight:600;
+    font-family:inherit;
+    border-radius:12px;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+
+#searchBtn:hover{
+    background:#0f766e;;
+    color:black;
+    transform: translateY(-2px);
+}
+
+
+.weather-card{
+    background-color:rgb(152, 175, 182);
+    width:100%;
+    max-width: 420px;
+    padding: 35px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    height:360px;
+    border:1px solid rgba(255, 255, 255, 0.8);
+    border-radius:24px;
+    box-shadow: 0 15px 45px rgba(30, 64, 100, 0.12);
+    text-align:center;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff, #ccfbf1);
+    padding: 20px;
+}
+
+#cityInput{
+    width:70%;
+    padding: 13px 15px;
+    border-radius: 10px;
+    border: 1px solid #dbe3bc;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+    font-family: inherit;
+    background: #f8fafc;
+    transition: 0.3s;
+}
+
+#cityInput:focus {
+    border-color: #0d9488;
+    box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.12);
+}
+
+#cityResults{
+    display: flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top: 15px;
+}
+
+#cityResults button{
+    padding:11px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #334155;
+    font-family: inherit;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#cityResults button:hover{
+    background:#ccfbf1;
+    border-color: #0d9488;
+}
+
+#weather {
+    margin-top: 25px;
+}
+
+#weather .weather-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 10px 5px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+#weather h1{
+    font-size: 65px;
+    color:#0f766e;
+    font-weight:800px;
+    margin-bottom:20px;
+}
+
+#weather h2{
+    font-size: 19px;
+    color:#334155;
+    font-weight:600px;
+    margin-bottom:20px;
+}
+
+#weather p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .weather-card {
+        padding: 25px 16px;
+    }
+
+    #cityInput {
+        width: 65%;
+    }
+
+    #searchBtn {
+        padding: 13px 12px;
+    }
+}
